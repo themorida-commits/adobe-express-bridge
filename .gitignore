@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.DS_Store
+
+# Bridge secrets — never commit (generate locally, see README)
+relay/token.txt
+relay/cert.pem
+relay/cert.pem.bak
+relay/key.pem
+*.pem
+*.key
+*.crt
+.env
+
+# Runtime output
+relay/shots/
+*.log

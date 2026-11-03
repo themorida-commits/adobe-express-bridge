@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Express Bridge</title>
+        <style>
+            body { font-family: sans-serif; margin: 16px; color: #16324F; }
+            .container { display: flex; flex-direction: column; gap: 10px; }
+            #status { font-weight: 600; }
+            #log { white-space: pre-wrap; font-size: 11px; background: #FFF8F0; border: 1px solid #E2725B; border-radius: 8px; padding: 8px; min-height: 120px; }
+            button { background-color: #0E7C7B; border: 1px solid #0E7C7B; border-radius: 16px; color: #fff; height: 30px; cursor: pointer; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>🌉 Express Bridge</div>
+            <div id="status">Starting…</div>
+            <button id="testText">Add test text</button>
+            <div id="log"></div>
+        </div>
+        <script type="module" src="add-on-console-override.js"></script>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
